@@ -1,0 +1,462 @@
+{
+  "name": "GT1",
+  "description": "Guarantor",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Set ID - GT1",
+      "datatype": "SI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Guarantor Number",
+      "datatype": "CX",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 3,
+      "name": "Guarantor Name",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Guarantor Spouse Name",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Guarantor Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 6,
+      "name": "Guarantor Ph Num - Home",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 7,
+      "name": "Guarantor Ph Num - Business",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 8,
+      "name": "Guarantor Date/Time of Birth",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 9,
+      "name": "Guarantor Administrative Sex",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0001"
+    },
+    {
+      "seq": 10,
+      "name": "Guarantor Type",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 11,
+      "name": "Guarantor Relationship",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0063"
+    },
+    {
+      "seq": 12,
+      "name": "Guarantor SSN",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 13,
+      "name": "Guarantor Date - Begin",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 14,
+      "name": "Guarantor Date - End",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 15,
+      "name": "Guarantor Priority",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 16,
+      "name": "Guarantor Employer Name",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 17,
+      "name": "Guarantor Employer Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 18,
+      "name": "Guarantor Employer Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 19,
+      "name": "Guarantor Employee ID Number",
+      "datatype": "CX",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 20,
+      "name": "Guarantor Employment Status",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 21,
+      "name": "Guarantor Organization Name",
+      "datatype": "XON",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 22,
+      "name": "Guarantor Billing Hold Flag",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0136"
+    },
+    {
+      "seq": 23,
+      "name": "Guarantor Credit Rating Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 24,
+      "name": "Guarantor Death Date and Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 25,
+      "name": "Guarantor Death Flag",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0136"
+    },
+    {
+      "seq": 26,
+      "name": "Guarantor Charge Adjustment Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 27,
+      "name": "Guarantor Household Annual Income",
+      "datatype": "CP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 28,
+      "name": "Guarantor Household Size",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 29,
+      "name": "Guarantor Employer ID Number",
+      "datatype": "CX",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 30,
+      "name": "Guarantor Marital Status Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0002"
+    },
+    {
+      "seq": 31,
+      "name": "Guarantor Hire Effective Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 32,
+      "name": "Employment Stop Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 33,
+      "name": "Living Dependency",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0223"
+    },
+    {
+      "seq": 34,
+      "name": "Ambulatory Status",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0009"
+    },
+    {
+      "seq": 35,
+      "name": "Citizenship",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0171"
+    },
+    {
+      "seq": 36,
+      "name": "Primary Language",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0296"
+    },
+    {
+      "seq": 37,
+      "name": "Living Arrangement",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0220"
+    },
+    {
+      "seq": 38,
+      "name": "Publicity Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0215"
+    },
+    {
+      "seq": 39,
+      "name": "Protection Indicator",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0136"
+    },
+    {
+      "seq": 40,
+      "name": "Student Indicator",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0231"
+    },
+    {
+      "seq": 41,
+      "name": "Religion",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0006"
+    },
+    {
+      "seq": 42,
+      "name": "Mother's Maiden Name",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 43,
+      "name": "Nationality",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0212"
+    },
+    {
+      "seq": 44,
+      "name": "Ethnic Group",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0189"
+    },
+    {
+      "seq": 45,
+      "name": "Contact Person's Name",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 46,
+      "name": "Contact Person's Telephone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 47,
+      "name": "Contact Reason",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 48,
+      "name": "Contact Relationship",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0063"
+    },
+    {
+      "seq": 49,
+      "name": "Job Title",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 50,
+      "name": "Job Code/Class",
+      "datatype": "JCC",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 51,
+      "name": "Guarantor Employer's Organization Name",
+      "datatype": "XON",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 52,
+      "name": "Handicap",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0295"
+    },
+    {
+      "seq": 53,
+      "name": "Job Status",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0311"
+    },
+    {
+      "seq": 54,
+      "name": "Guarantor Financial Class",
+      "datatype": "FC",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 55,
+      "name": "Guarantor Race",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0005"
+    },
+    {
+      "seq": 56,
+      "name": "Guarantor Birth Place",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 57,
+      "name": "VIP Indicator",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0099"
+    }
+  ]
+}

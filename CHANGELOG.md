@@ -14,6 +14,9 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 - Segments AL1 (Patient Allergy Information) and DG1 (Diagnosis), plus the
   CP (Composite Price) data type; both are already allowed by the ADT
   grammar, so explain and validate now handle them fully.
+- Segments GT1 (Guarantor) and IN1 (Insurance), plus the AUI (Authorization
+  Information) data type; both added to the ADT grammar as optional,
+  repeating.
 - Tables carry an `open` flag: user-defined (suggested) tables are
   decode-only, so validate no longer flags legitimate site codes as
   "not in table". Existing 0001/0002 marked open accordingly.

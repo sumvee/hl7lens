@@ -1,0 +1,7 @@
+[
+  {"name": "AUI", "description": "Authorization Information", "components": [
+    {"seq": 1, "name": "Authorization Number", "datatype": "ST"},
+    {"seq": 2, "name": "Date",                 "datatype": "DT"},
+    {"seq": 3, "name": "Source",               "datatype": "ST"}
+  ]}
+]

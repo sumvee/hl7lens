@@ -1,0 +1,430 @@
+{
+  "name": "IN1",
+  "description": "Insurance",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Set ID - IN1",
+      "datatype": "SI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Insurance Plan ID",
+      "datatype": "CE",
+      "optionality": "R",
+      "repeats": false,
+      "table": "0072"
+    },
+    {
+      "seq": 3,
+      "name": "Insurance Company ID",
+      "datatype": "CX",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Insurance Company Name",
+      "datatype": "XON",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Insurance Company Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 6,
+      "name": "Insurance Co Contact Person",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 7,
+      "name": "Insurance Co Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 8,
+      "name": "Group Number",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 9,
+      "name": "Group Name",
+      "datatype": "XON",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 10,
+      "name": "Insured's Group Emp. ID",
+      "datatype": "CX",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 11,
+      "name": "Insured's Group Emp Name",
+      "datatype": "XON",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 12,
+      "name": "Plan Effective Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 13,
+      "name": "Plan Expiration Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 14,
+      "name": "Authorization Information",
+      "datatype": "AUI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 15,
+      "name": "Plan Type",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 16,
+      "name": "Name of Insured",
+      "datatype": "XPN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 17,
+      "name": "Insured's Relationship to Patient",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0063"
+    },
+    {
+      "seq": 18,
+      "name": "Insured's Date of Birth",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 19,
+      "name": "Insured's Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 20,
+      "name": "Assignment of Benefits",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 21,
+      "name": "Coordination of Benefits",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 22,
+      "name": "Coord of Ben. Priority",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 23,
+      "name": "Notice of Admission Flag",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 24,
+      "name": "Notice of Admission Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 25,
+      "name": "Report of Eligibility Flag",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 26,
+      "name": "Report of Eligibility Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 27,
+      "name": "Release Information Code",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 28,
+      "name": "Pre-admit Cert (PAC)",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 29,
+      "name": "Verification Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 30,
+      "name": "Verification by",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 31,
+      "name": "Type of Agreement Code",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 32,
+      "name": "Billing Status",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 33,
+      "name": "Lifetime Reserve Days",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 34,
+      "name": "Delay Before L.R. Day",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 35,
+      "name": "Company Plan Code",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 36,
+      "name": "Policy Number",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 37,
+      "name": "Policy Deductible",
+      "datatype": "CP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 38,
+      "name": "Policy Limit - Amount",
+      "datatype": "CP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 39,
+      "name": "Policy Limit - Days",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 40,
+      "name": "Room Rate - Semi-Private",
+      "datatype": "CP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 41,
+      "name": "Room Rate - Private",
+      "datatype": "CP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 42,
+      "name": "Insured's Employment Status",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 43,
+      "name": "Insured's Administrative Sex",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0001"
+    },
+    {
+      "seq": 44,
+      "name": "Insured's Employer's Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 45,
+      "name": "Verification Status",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 46,
+      "name": "Prior Insurance Plan ID",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 47,
+      "name": "Coverage Type",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 48,
+      "name": "Handicap",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 49,
+      "name": "Insured's ID Number",
+      "datatype": "CX",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 50,
+      "name": "Signature Code",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 51,
+      "name": "Signature Code Date",
+      "datatype": "DT",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 52,
+      "name": "Insured's Birth Place",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 53,
+      "name": "VIP Indicator",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    }
+  ]
+}

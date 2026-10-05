@@ -12,6 +12,8 @@
     {"segment": "PV2", "optionality": "O", "repeats": false},
     {"segment": "OBX", "optionality": "O", "repeats": true},
     {"segment": "AL1", "optionality": "O", "repeats": true},
-    {"segment": "DG1", "optionality": "O", "repeats": true}
+    {"segment": "DG1", "optionality": "O", "repeats": true},
+    {"segment": "GT1", "optionality": "O", "repeats": true},
+    {"segment": "IN1", "optionality": "O", "repeats": true}
   ]
 }
