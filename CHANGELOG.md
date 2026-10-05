@@ -11,6 +11,9 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
   Ambulatory Status, 0063 Relationship, 0069 Hospital Service.
 - Code table 0078 Abnormal Flags / Interpretation Codes (decodes OBX-8),
   derived from the Apache-2.0 HL7 v2-to-FHIR ConceptMap.
+- Segments AL1 (Patient Allergy Information) and DG1 (Diagnosis), plus the
+  CP (Composite Price) data type; both are already allowed by the ADT
+  grammar, so explain and validate now handle them fully.
 - Tables carry an `open` flag: user-defined (suggested) tables are
   decode-only, so validate no longer flags legitimate site codes as
   "not in table". Existing 0001/0002 marked open accordingly.

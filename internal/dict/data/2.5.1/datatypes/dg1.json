@@ -1,0 +1,10 @@
+[
+  {"name": "CP", "description": "Composite Price", "components": [
+    {"seq": 1, "name": "Price",       "datatype": "MO"},
+    {"seq": 2, "name": "Price Type",  "datatype": "ID", "table": "0205"},
+    {"seq": 3, "name": "From Value",  "datatype": "NM"},
+    {"seq": 4, "name": "To Value",    "datatype": "NM"},
+    {"seq": 5, "name": "Range Units", "datatype": "CE"},
+    {"seq": 6, "name": "Range Type",  "datatype": "ID", "table": "0298"}
+  ]}
+]

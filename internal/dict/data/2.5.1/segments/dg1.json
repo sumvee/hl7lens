@@ -1,0 +1,27 @@
+{
+  "name": "DG1",
+  "description": "Diagnosis",
+  "fields": [
+    {"seq": 1,  "name": "Set ID - DG1",             "datatype": "SI",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 2,  "name": "Diagnosis Coding Method",  "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0053"},
+    {"seq": 3,  "name": "Diagnosis Code - DG1",     "datatype": "CE",  "optionality": "O", "repeats": false, "table": "0051"},
+    {"seq": 4,  "name": "Diagnosis Description",    "datatype": "ST",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 5,  "name": "Diagnosis Date/Time",      "datatype": "TS",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 6,  "name": "Diagnosis Type",           "datatype": "IS",  "optionality": "R", "repeats": false, "table": "0052"},
+    {"seq": 7,  "name": "Major Diagnostic Category","datatype": "CE",  "optionality": "O", "repeats": false, "table": "0118"},
+    {"seq": 8,  "name": "Diagnostic Related Group", "datatype": "CE",  "optionality": "O", "repeats": false, "table": "0055"},
+    {"seq": 9,  "name": "DRG Approval Indicator",   "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0136"},
+    {"seq": 10, "name": "DRG Grouper Review Code",  "datatype": "IS",  "optionality": "O", "repeats": false, "table": "0056"},
+    {"seq": 11, "name": "Outlier Type",             "datatype": "CE",  "optionality": "O", "repeats": false, "table": "0083"},
+    {"seq": 12, "name": "Outlier Days",             "datatype": "NM",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 13, "name": "Outlier Cost",             "datatype": "CP",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 14, "name": "Grouper Version And Type", "datatype": "ST",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 15, "name": "Diagnosis Priority",       "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0359"},
+    {"seq": 16, "name": "Diagnosing Clinician",     "datatype": "XCN", "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 17, "name": "Diagnosis Classification", "datatype": "IS",  "optionality": "O", "repeats": false, "table": "0228"},
+    {"seq": 18, "name": "Confidential Indicator",   "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0136"},
+    {"seq": 19, "name": "Attestation Date/Time",    "datatype": "TS",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 20, "name": "Diagnosis Identifier",     "datatype": "EI",  "optionality": "C", "repeats": false, "table": ""},
+    {"seq": 21, "name": "Diagnosis Action Code",    "datatype": "ID",  "optionality": "C", "repeats": false, "table": "0206"}
+  ]
+}

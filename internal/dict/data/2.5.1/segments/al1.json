@@ -1,0 +1,12 @@
+{
+  "name": "AL1",
+  "description": "Patient Allergy Information",
+  "fields": [
+    {"seq": 1, "name": "Set ID - AL1",                       "datatype": "SI", "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 2, "name": "Allergen Type Code",                 "datatype": "CE", "optionality": "O", "repeats": false, "table": "0127"},
+    {"seq": 3, "name": "Allergen Code/Mnemonic/Description",  "datatype": "CE", "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 4, "name": "Allergy Severity Code",              "datatype": "CE", "optionality": "O", "repeats": false, "table": "0128"},
+    {"seq": 5, "name": "Allergy Reaction Code",              "datatype": "ST", "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 6, "name": "Identification Date",                "datatype": "DT", "optionality": "O", "repeats": false, "table": ""}
+  ]
+}
