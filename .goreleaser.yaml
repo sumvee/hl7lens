@@ -1,0 +1,49 @@
+version: 2
+
+project_name: hl7lens
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - main: .
+    binary: hl7lens
+    env:
+      - CGO_ENABLED=0
+    goos: [linux, darwin, windows]
+    goarch: [amd64, arm64]
+    ldflags:
+      - -s -w -X github.com/sumvee/hl7lens/cmd.version={{ .Version }}
+
+archives:
+  - formats: [tar.gz]
+    name_template: >-
+      {{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^chore:"
+
+brews:
+  - repository:
+      owner: sumvee
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_TOKEN }}"
+    homepage: https://github.com/sumvee/hl7lens
+    description: Read, validate, and safely share HL7 v2.x messages
+    license: Apache-2.0
+    install: |
+      bin.install "hl7lens"
+    test: |
+      system "#{bin}/hl7lens", "--version"
