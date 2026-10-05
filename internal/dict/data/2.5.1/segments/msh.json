@@ -1,0 +1,27 @@
+{
+  "name": "MSH",
+  "description": "Message Header",
+  "fields": [
+    {"seq": 1,  "name": "Field Separator",                  "datatype": "ST",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 2,  "name": "Encoding Characters",              "datatype": "ST",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 3,  "name": "Sending Application",              "datatype": "HD",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 4,  "name": "Sending Facility",                 "datatype": "HD",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 5,  "name": "Receiving Application",            "datatype": "HD",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 6,  "name": "Receiving Facility",               "datatype": "HD",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 7,  "name": "Date/Time Of Message",             "datatype": "TS",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 8,  "name": "Security",                         "datatype": "ST",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 9,  "name": "Message Type",                     "datatype": "MSG", "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 10, "name": "Message Control ID",               "datatype": "ST",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 11, "name": "Processing ID",                    "datatype": "PT",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 12, "name": "Version ID",                       "datatype": "VID", "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 13, "name": "Sequence Number",                  "datatype": "NM",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 14, "name": "Continuation Pointer",             "datatype": "ST",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 15, "name": "Accept Acknowledgment Type",       "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0155"},
+    {"seq": 16, "name": "Application Acknowledgment Type",  "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0155"},
+    {"seq": 17, "name": "Country Code",                     "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0399"},
+    {"seq": 18, "name": "Character Set",                    "datatype": "ID",  "optionality": "O", "repeats": true,  "table": "0211"},
+    {"seq": 19, "name": "Principal Language Of Message",    "datatype": "CE",  "optionality": "O", "repeats": false, "table": "0296"},
+    {"seq": 20, "name": "Alternate Character Set Handling Scheme", "datatype": "ID", "optionality": "O", "repeats": false, "table": "0356"},
+    {"seq": 21, "name": "Message Profile Identifier",       "datatype": "EI",  "optionality": "O", "repeats": true,  "table": ""}
+  ]
+}

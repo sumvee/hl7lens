@@ -1,0 +1,54 @@
+[
+  {"name": "FT",     "description": "Formatted Text Data", "primitive": true},
+  {"name": "TX",     "description": "Text Data",           "primitive": true},
+  {"name": "varies", "description": "Variable (type given by another field)", "primitive": true},
+
+  {"name": "CQ", "description": "Composite Quantity with Units", "components": [
+    {"seq": 1, "name": "Quantity", "datatype": "NM"},
+    {"seq": 2, "name": "Units",    "datatype": "CE"}
+  ]},
+
+  {"name": "MO", "description": "Money", "components": [
+    {"seq": 1, "name": "Quantity",     "datatype": "NM"},
+    {"seq": 2, "name": "Denomination", "datatype": "ID", "table": "0913"}
+  ]},
+
+  {"name": "MOC", "description": "Money and Code", "components": [
+    {"seq": 1, "name": "Monetary Amount", "datatype": "MO"},
+    {"seq": 2, "name": "Charge Code",     "datatype": "CE"}
+  ]},
+
+  {"name": "EIP", "description": "Entity Identifier Pair", "components": [
+    {"seq": 1, "name": "Placer Assigned Identifier", "datatype": "EI"},
+    {"seq": 2, "name": "Filler Assigned Identifier", "datatype": "EI"}
+  ]},
+
+  {"name": "PRL", "description": "Parent Result Link", "components": [
+    {"seq": 1, "name": "Parent Observation Identifier",         "datatype": "CE"},
+    {"seq": 2, "name": "Parent Observation Sub-identifier",     "datatype": "ST"},
+    {"seq": 3, "name": "Parent Observation Value Descriptor",   "datatype": "TX"}
+  ]},
+
+  {"name": "JCC", "description": "Job Code/Class", "components": [
+    {"seq": 1, "name": "Job Code",             "datatype": "IS", "table": "0327"},
+    {"seq": 2, "name": "Job Class",            "datatype": "IS", "table": "0328"},
+    {"seq": 3, "name": "Job Description Text", "datatype": "TX"}
+  ]},
+
+  {"name": "XON", "description": "Extended Composite Name and ID for Organizations", "components": [
+    {"seq": 1,  "name": "Organization Name",            "datatype": "ST"},
+    {"seq": 2,  "name": "Organization Name Type Code",  "datatype": "IS", "table": "0204"},
+    {"seq": 3,  "name": "ID Number",                    "datatype": "NM"},
+    {"seq": 4,  "name": "Check Digit",                  "datatype": "NM"},
+    {"seq": 5,  "name": "Check Digit Scheme",           "datatype": "ID", "table": "0061"},
+    {"seq": 6,  "name": "Assigning Authority",          "datatype": "HD"},
+    {"seq": 7,  "name": "Identifier Type Code",         "datatype": "ID", "table": "0203"},
+    {"seq": 8,  "name": "Assigning Facility",           "datatype": "HD"},
+    {"seq": 9,  "name": "Name Representation Code",      "datatype": "ID", "table": "0465"},
+    {"seq": 10, "name": "Organization Identifier",      "datatype": "ST"}
+  ]},
+
+  {"name": "SPS", "description": "Specimen Source (composite; not broken down yet)"},
+  {"name": "TQ",  "description": "Quantity/Timing (composite; not broken down yet)"},
+  {"name": "NDL", "description": "Name with Date and Location (composite; not broken down yet)"}
+]

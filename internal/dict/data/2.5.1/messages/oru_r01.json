@@ -1,0 +1,14 @@
+{
+  "structure": "ORU_R01",
+  "triggers": ["R01"],
+  "segments": [
+    {"segment": "MSH", "optionality": "R", "repeats": false},
+    {"segment": "PID", "optionality": "R", "repeats": true},
+    {"segment": "PD1", "optionality": "O", "repeats": false},
+    {"segment": "NK1", "optionality": "O", "repeats": true},
+    {"segment": "PV1", "optionality": "O", "repeats": false},
+    {"segment": "OBR", "optionality": "R", "repeats": true},
+    {"segment": "NTE", "optionality": "O", "repeats": true},
+    {"segment": "OBX", "optionality": "O", "repeats": true}
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0085",
+    "name": "Observation Result Status Codes Interpretation",
+    "entries": {
+      "A": "Amended based on adjustments provided by the placer",
+      "B": "Appended report",
+      "C": "Correction (replaces a final result)",
+      "D": "Deletes the OBX record",
+      "F": "Final results",
+      "I": "Specimen in lab; results pending",
+      "N": "Not asked",
+      "O": "Order detail description only (no result)",
+      "P": "Preliminary results",
+      "R": "Results entered, not verified",
+      "S": "Partial results",
+      "U": "Results status change to final without retransmitting",
+      "V": "Verified final results",
+      "W": "Post original as wrong",
+      "X": "Results cannot be obtained for this observation"
+    }
+  }
+]

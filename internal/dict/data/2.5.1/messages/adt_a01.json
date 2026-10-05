@@ -1,0 +1,17 @@
+{
+  "structure": "ADT_A01",
+  "triggers": ["A01", "A04", "A08"],
+  "ordered": true,
+  "segments": [
+    {"segment": "MSH", "optionality": "R", "repeats": false},
+    {"segment": "EVN", "optionality": "R", "repeats": false},
+    {"segment": "PID", "optionality": "R", "repeats": false},
+    {"segment": "PD1", "optionality": "O", "repeats": false},
+    {"segment": "NK1", "optionality": "O", "repeats": true},
+    {"segment": "PV1", "optionality": "R", "repeats": false},
+    {"segment": "PV2", "optionality": "O", "repeats": false},
+    {"segment": "OBX", "optionality": "O", "repeats": true},
+    {"segment": "AL1", "optionality": "O", "repeats": true},
+    {"segment": "DG1", "optionality": "O", "repeats": true}
+  ]
+}

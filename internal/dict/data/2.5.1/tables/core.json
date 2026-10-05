@@ -1,0 +1,44 @@
+[
+  {
+    "id": "0001",
+    "name": "Administrative Sex",
+    "entries": {
+      "F": "Female",
+      "M": "Male",
+      "O": "Other",
+      "U": "Unknown",
+      "A": "Ambiguous",
+      "N": "Not applicable"
+    }
+  },
+  {
+    "id": "0002",
+    "name": "Marital Status",
+    "entries": {
+      "A": "Separated",
+      "D": "Divorced",
+      "M": "Married",
+      "S": "Single",
+      "W": "Widowed",
+      "C": "Common law",
+      "G": "Living together",
+      "P": "Domestic partner",
+      "R": "Registered domestic partner",
+      "E": "Legally Separated",
+      "N": "Annulled",
+      "I": "Interlocutory",
+      "B": "Unmarried",
+      "U": "Unknown",
+      "O": "Other",
+      "T": "Unreported"
+    }
+  },
+  {
+    "id": "0136",
+    "name": "Yes/No Indicator",
+    "entries": {
+      "Y": "Yes",
+      "N": "No"
+    }
+  }
+]

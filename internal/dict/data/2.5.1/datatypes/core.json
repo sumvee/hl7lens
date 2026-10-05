@@ -1,0 +1,129 @@
+[
+  {"name": "SI",  "description": "Sequence ID",            "primitive": true},
+  {"name": "ST",  "description": "String Data",            "primitive": true},
+  {"name": "NM",  "description": "Numeric",                "primitive": true},
+  {"name": "ID",  "description": "Coded Value for HL7 Tables", "primitive": true},
+  {"name": "IS",  "description": "Coded Value for User-Defined Tables", "primitive": true},
+  {"name": "DT",  "description": "Date",                   "primitive": true},
+  {"name": "DTM", "description": "Date/Time",              "primitive": true},
+  {"name": "TM",  "description": "Time",                   "primitive": true},
+
+  {"name": "TS", "description": "Time Stamp", "components": [
+    {"seq": 1, "name": "Time",               "datatype": "DTM"},
+    {"seq": 2, "name": "Degree of Precision", "datatype": "ID"}
+  ]},
+
+  {"name": "FN", "description": "Family Name", "components": [
+    {"seq": 1, "name": "Surname",                              "datatype": "ST"},
+    {"seq": 2, "name": "Own Surname Prefix",                   "datatype": "ST"},
+    {"seq": 3, "name": "Own Surname",                          "datatype": "ST"},
+    {"seq": 4, "name": "Surname Prefix from Partner/Spouse",   "datatype": "ST"},
+    {"seq": 5, "name": "Surname from Partner/Spouse",          "datatype": "ST"}
+  ]},
+
+  {"name": "XPN", "description": "Extended Person Name", "components": [
+    {"seq": 1,  "name": "Family Name",                         "datatype": "FN"},
+    {"seq": 2,  "name": "Given Name",                          "datatype": "ST"},
+    {"seq": 3,  "name": "Second and Further Given Names or Initials Thereof", "datatype": "ST"},
+    {"seq": 4,  "name": "Suffix",                              "datatype": "ST"},
+    {"seq": 5,  "name": "Prefix",                              "datatype": "ST"},
+    {"seq": 6,  "name": "Degree",                              "datatype": "IS", "table": "0360"},
+    {"seq": 7,  "name": "Name Type Code",                      "datatype": "ID", "table": "0200"},
+    {"seq": 8,  "name": "Name Representation Code",            "datatype": "ID", "table": "0465"},
+    {"seq": 9,  "name": "Name Context",                        "datatype": "CE"},
+    {"seq": 10, "name": "Name Validity Range",                 "datatype": "DR"},
+    {"seq": 11, "name": "Name Assembly Order",                 "datatype": "ID", "table": "0444"},
+    {"seq": 12, "name": "Effective Date",                      "datatype": "TS"},
+    {"seq": 13, "name": "Expiration Date",                     "datatype": "TS"},
+    {"seq": 14, "name": "Professional Suffix",                 "datatype": "ST"}
+  ]},
+
+  {"name": "CX", "description": "Extended Composite ID with Check Digit", "components": [
+    {"seq": 1,  "name": "ID Number",                           "datatype": "ST"},
+    {"seq": 2,  "name": "Check Digit",                         "datatype": "ST"},
+    {"seq": 3,  "name": "Check Digit Scheme",                  "datatype": "ID", "table": "0061"},
+    {"seq": 4,  "name": "Assigning Authority",                 "datatype": "HD"},
+    {"seq": 5,  "name": "Identifier Type Code",                "datatype": "ID", "table": "0203"},
+    {"seq": 6,  "name": "Assigning Facility",                  "datatype": "HD"},
+    {"seq": 7,  "name": "Effective Date",                      "datatype": "DT"},
+    {"seq": 8,  "name": "Expiration Date",                     "datatype": "DT"},
+    {"seq": 9,  "name": "Assigning Jurisdiction",             "datatype": "CWE"},
+    {"seq": 10, "name": "Assigning Agency or Department",      "datatype": "CWE"}
+  ]},
+
+  {"name": "CE", "description": "Coded Element", "components": [
+    {"seq": 1, "name": "Identifier",                           "datatype": "ST"},
+    {"seq": 2, "name": "Text",                                 "datatype": "ST"},
+    {"seq": 3, "name": "Name of Coding System",               "datatype": "ID"},
+    {"seq": 4, "name": "Alternate Identifier",                 "datatype": "ST"},
+    {"seq": 5, "name": "Alternate Text",                       "datatype": "ST"},
+    {"seq": 6, "name": "Name of Alternate Coding System",      "datatype": "ID"}
+  ]},
+
+  {"name": "CWE", "description": "Coded with Exceptions", "components": [
+    {"seq": 1, "name": "Identifier",                           "datatype": "ST"},
+    {"seq": 2, "name": "Text",                                 "datatype": "ST"},
+    {"seq": 3, "name": "Name of Coding System",               "datatype": "ID", "table": "0396"},
+    {"seq": 4, "name": "Alternate Identifier",                 "datatype": "ST"},
+    {"seq": 5, "name": "Alternate Text",                       "datatype": "ST"},
+    {"seq": 6, "name": "Name of Alternate Coding System",      "datatype": "ID", "table": "0396"},
+    {"seq": 7, "name": "Coding System Version ID",            "datatype": "ST"},
+    {"seq": 8, "name": "Alternate Coding System Version ID",   "datatype": "ST"},
+    {"seq": 9, "name": "Original Text",                        "datatype": "ST"}
+  ]},
+
+  {"name": "SAD", "description": "Street Address", "components": [
+    {"seq": 1, "name": "Street or Mailing Address",            "datatype": "ST"},
+    {"seq": 2, "name": "Street Name",                          "datatype": "ST"},
+    {"seq": 3, "name": "Dwelling Number",                      "datatype": "ST"}
+  ]},
+
+  {"name": "XAD", "description": "Extended Address", "components": [
+    {"seq": 1,  "name": "Street Address",                      "datatype": "SAD"},
+    {"seq": 2,  "name": "Other Designation",                   "datatype": "ST"},
+    {"seq": 3,  "name": "City",                                "datatype": "ST"},
+    {"seq": 4,  "name": "State or Province",                   "datatype": "ST"},
+    {"seq": 5,  "name": "Zip or Postal Code",                  "datatype": "ST"},
+    {"seq": 6,  "name": "Country",                             "datatype": "ID", "table": "0399"},
+    {"seq": 7,  "name": "Address Type",                        "datatype": "ID", "table": "0190"},
+    {"seq": 8,  "name": "Other Geographic Designation",        "datatype": "ST"},
+    {"seq": 9,  "name": "County/Parish Code",                  "datatype": "IS", "table": "0289"},
+    {"seq": 10, "name": "Census Tract",                        "datatype": "IS", "table": "0288"},
+    {"seq": 11, "name": "Address Representation Code",         "datatype": "ID", "table": "0465"},
+    {"seq": 12, "name": "Address Validity Range",             "datatype": "DR"},
+    {"seq": 13, "name": "Effective Date",                      "datatype": "TS"},
+    {"seq": 14, "name": "Expiration Date",                     "datatype": "TS"}
+  ]},
+
+  {"name": "XTN", "description": "Extended Telecommunication Number", "components": [
+    {"seq": 1,  "name": "Telephone Number",                    "datatype": "ST"},
+    {"seq": 2,  "name": "Telecommunication Use Code",          "datatype": "ID", "table": "0201"},
+    {"seq": 3,  "name": "Telecommunication Equipment Type",    "datatype": "ID", "table": "0202"},
+    {"seq": 4,  "name": "Email Address",                       "datatype": "ST"},
+    {"seq": 5,  "name": "Country Code",                        "datatype": "NM"},
+    {"seq": 6,  "name": "Area/City Code",                      "datatype": "NM"},
+    {"seq": 7,  "name": "Local Number",                        "datatype": "NM"},
+    {"seq": 8,  "name": "Extension",                           "datatype": "NM"},
+    {"seq": 9,  "name": "Any Text",                            "datatype": "ST"},
+    {"seq": 10, "name": "Extension Prefix",                    "datatype": "ST"},
+    {"seq": 11, "name": "Speed Dial Code",                     "datatype": "ST"},
+    {"seq": 12, "name": "Unformatted Telephone Number",        "datatype": "ST"}
+  ]},
+
+  {"name": "HD", "description": "Hierarchic Designator", "components": [
+    {"seq": 1, "name": "Namespace ID",                         "datatype": "IS", "table": "0300"},
+    {"seq": 2, "name": "Universal ID",                         "datatype": "ST"},
+    {"seq": 3, "name": "Universal ID Type",                    "datatype": "ID", "table": "0301"}
+  ]},
+
+  {"name": "DLN", "description": "Driver's License Number", "components": [
+    {"seq": 1, "name": "License Number",                       "datatype": "ST"},
+    {"seq": 2, "name": "Issuing State, Province, Country",     "datatype": "IS", "table": "0333"},
+    {"seq": 3, "name": "Expiration Date",                      "datatype": "DT"}
+  ]},
+
+  {"name": "DR", "description": "Date/Time Range", "components": [
+    {"seq": 1, "name": "Range Start Date/Time",               "datatype": "TS"},
+    {"seq": 2, "name": "Range End Date/Time",                 "datatype": "TS"}
+  ]}
+]

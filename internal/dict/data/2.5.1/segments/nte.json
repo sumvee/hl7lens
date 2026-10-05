@@ -1,0 +1,10 @@
+{
+  "name": "NTE",
+  "description": "Notes and Comments",
+  "fields": [
+    {"seq": 1, "name": "Set ID - NTE",      "datatype": "SI", "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 2, "name": "Source of Comment", "datatype": "ID", "optionality": "O", "repeats": false, "table": "0105"},
+    {"seq": 3, "name": "Comment",           "datatype": "FT", "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 4, "name": "Comment Type",      "datatype": "CE", "optionality": "O", "repeats": false, "table": "0364"}
+  ]
+}

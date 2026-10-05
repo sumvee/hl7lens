@@ -1,0 +1,13 @@
+{
+  "name": "EVN",
+  "description": "Event Type",
+  "fields": [
+    {"seq": 1, "name": "Event Type Code",       "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0003"},
+    {"seq": 2, "name": "Recorded Date/Time",    "datatype": "TS",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 3, "name": "Date/Time Planned Event","datatype": "TS", "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 4, "name": "Event Reason Code",     "datatype": "IS",  "optionality": "O", "repeats": false, "table": "0062"},
+    {"seq": 5, "name": "Operator ID",           "datatype": "XCN", "optionality": "O", "repeats": true,  "table": "0188"},
+    {"seq": 6, "name": "Event Occurred",        "datatype": "TS",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 7, "name": "Event Facility",        "datatype": "HD",  "optionality": "O", "repeats": false, "table": ""}
+  ]
+}

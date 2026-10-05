@@ -1,0 +1,25 @@
+{
+  "name": "OBX",
+  "description": "Observation/Result",
+  "fields": [
+    {"seq": 1,  "name": "Set ID - OBX",                      "datatype": "SI",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 2,  "name": "Value Type",                        "datatype": "ID",     "optionality": "R", "repeats": false, "table": "0125"},
+    {"seq": 3,  "name": "Observation Identifier",            "datatype": "CE",     "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 4,  "name": "Observation Sub-ID",                "datatype": "ST",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 5,  "name": "Observation Value",                 "datatype": "varies", "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 6,  "name": "Units",                             "datatype": "CE",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 7,  "name": "References Range",                  "datatype": "ST",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 8,  "name": "Abnormal Flags",                    "datatype": "IS",     "optionality": "O", "repeats": true,  "table": "0078"},
+    {"seq": 9,  "name": "Probability",                       "datatype": "NM",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 10, "name": "Nature of Abnormal Test",           "datatype": "ID",     "optionality": "O", "repeats": true,  "table": "0080"},
+    {"seq": 11, "name": "Observation Result Status",         "datatype": "ID",     "optionality": "R", "repeats": false, "table": "0085"},
+    {"seq": 12, "name": "Effective Date of Reference Range", "datatype": "TS",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 13, "name": "User Defined Access Checks",        "datatype": "ST",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 14, "name": "Date/Time of the Observation",      "datatype": "TS",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 15, "name": "Producer's ID",                     "datatype": "CE",     "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 16, "name": "Responsible Observer",              "datatype": "XCN",    "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 17, "name": "Observation Method",                "datatype": "CE",     "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 18, "name": "Equipment Instance Identifier",     "datatype": "EI",     "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 19, "name": "Date/Time of the Analysis",         "datatype": "TS",     "optionality": "O", "repeats": false, "table": ""}
+  ]
+}

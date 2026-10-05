@@ -1,0 +1,75 @@
+[
+  {"name": "MSG", "description": "Message Type", "components": [
+    {"seq": 1, "name": "Message Code",     "datatype": "ID", "table": "0076"},
+    {"seq": 2, "name": "Trigger Event",    "datatype": "ID", "table": "0003"},
+    {"seq": 3, "name": "Message Structure", "datatype": "ID", "table": "0354"}
+  ]},
+
+  {"name": "PT", "description": "Processing Type", "components": [
+    {"seq": 1, "name": "Processing ID",   "datatype": "ID", "table": "0103"},
+    {"seq": 2, "name": "Processing Mode", "datatype": "ID", "table": "0207"}
+  ]},
+
+  {"name": "VID", "description": "Version Identifier", "components": [
+    {"seq": 1, "name": "Version ID",               "datatype": "ID", "table": "0104"},
+    {"seq": 2, "name": "Internationalization Code", "datatype": "CE", "table": "0399"},
+    {"seq": 3, "name": "International Version ID",   "datatype": "CE"}
+  ]},
+
+  {"name": "EI", "description": "Entity Identifier", "components": [
+    {"seq": 1, "name": "Entity Identifier", "datatype": "ST"},
+    {"seq": 2, "name": "Namespace ID",      "datatype": "IS", "table": "0363"},
+    {"seq": 3, "name": "Universal ID",      "datatype": "ST"},
+    {"seq": 4, "name": "Universal ID Type", "datatype": "ID", "table": "0301"}
+  ]},
+
+  {"name": "PL", "description": "Person Location", "components": [
+    {"seq": 1,  "name": "Point of Care",                    "datatype": "IS", "table": "0302"},
+    {"seq": 2,  "name": "Room",                             "datatype": "IS", "table": "0303"},
+    {"seq": 3,  "name": "Bed",                              "datatype": "IS", "table": "0304"},
+    {"seq": 4,  "name": "Facility",                         "datatype": "HD"},
+    {"seq": 5,  "name": "Location Status",                  "datatype": "IS", "table": "0306"},
+    {"seq": 6,  "name": "Person Location Type",             "datatype": "IS", "table": "0305"},
+    {"seq": 7,  "name": "Building",                         "datatype": "IS", "table": "0307"},
+    {"seq": 8,  "name": "Floor",                            "datatype": "IS", "table": "0308"},
+    {"seq": 9,  "name": "Location Description",             "datatype": "ST"},
+    {"seq": 10, "name": "Comprehensive Location Identifier","datatype": "EI"},
+    {"seq": 11, "name": "Assigning Authority for Location", "datatype": "HD"}
+  ]},
+
+  {"name": "DLD", "description": "Discharge to Location and Date", "components": [
+    {"seq": 1, "name": "Discharge to Location", "datatype": "IS", "table": "0113"},
+    {"seq": 2, "name": "Effective Date",        "datatype": "TS"}
+  ]},
+
+  {"name": "FC", "description": "Financial Class", "components": [
+    {"seq": 1, "name": "Financial Class Code", "datatype": "IS", "table": "0064"},
+    {"seq": 2, "name": "Effective Date",       "datatype": "TS"}
+  ]},
+
+  {"name": "XCN", "description": "Extended Composite ID Number and Name for Persons", "components": [
+    {"seq": 1,  "name": "ID Number",                         "datatype": "ST"},
+    {"seq": 2,  "name": "Family Name",                       "datatype": "FN"},
+    {"seq": 3,  "name": "Given Name",                        "datatype": "ST"},
+    {"seq": 4,  "name": "Second and Further Given Names or Initials Thereof", "datatype": "ST"},
+    {"seq": 5,  "name": "Suffix",                            "datatype": "ST"},
+    {"seq": 6,  "name": "Prefix",                            "datatype": "ST"},
+    {"seq": 7,  "name": "Degree",                            "datatype": "IS", "table": "0360"},
+    {"seq": 8,  "name": "Source Table",                      "datatype": "IS", "table": "0297"},
+    {"seq": 9,  "name": "Assigning Authority",               "datatype": "HD"},
+    {"seq": 10, "name": "Name Type Code",                    "datatype": "ID", "table": "0200"},
+    {"seq": 11, "name": "Identifier Check Digit",            "datatype": "ST"},
+    {"seq": 12, "name": "Check Digit Scheme",                "datatype": "ID", "table": "0061"},
+    {"seq": 13, "name": "Identifier Type Code",              "datatype": "ID", "table": "0203"},
+    {"seq": 14, "name": "Assigning Facility",                "datatype": "HD"},
+    {"seq": 15, "name": "Name Representation Code",          "datatype": "ID", "table": "0465"},
+    {"seq": 16, "name": "Name Context",                      "datatype": "CE"},
+    {"seq": 17, "name": "Name Validity Range",               "datatype": "DR"},
+    {"seq": 18, "name": "Name Assembly Order",               "datatype": "ID", "table": "0444"},
+    {"seq": 19, "name": "Effective Date",                    "datatype": "TS"},
+    {"seq": 20, "name": "Expiration Date",                   "datatype": "TS"},
+    {"seq": 21, "name": "Professional Suffix",               "datatype": "ST"},
+    {"seq": 22, "name": "Assigning Jurisdiction",            "datatype": "CWE"},
+    {"seq": 23, "name": "Assigning Agency or Department",    "datatype": "CWE"}
+  ]}
+]
