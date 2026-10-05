@@ -13,6 +13,8 @@ HL7 vocabulary / code tables (dict/.../tables)
   Source:  HL7 Terminology (THO), https://terminology.hl7.org
   License: Creative Commons Zero (CC0 1.0, public domain dedication)
   HL7 v2 code systems and tables are made freely available under CC0.
+  Exception: table 0078 is derived from the HL7 v2-to-FHIR ConceptMap
+  (Apache-2.0, see below), since it is not published as a CC0 THO page.
 
 HL7 v2 segment / datatype / message structure (dict/.../segments, datatypes,
 messages)
@@ -20,7 +22,8 @@ messages)
   (position, data type, optionality, repeatability, table binding),
   cross-checked against the HL7 v2-to-FHIR project.
 
-HL7 v2-to-FHIR mapping content (used only to cross-check the above)
+HL7 v2-to-FHIR mapping content (cross-check for the above; also the source
+of code table 0078)
   Source:  https://github.com/HL7/v2-to-fhir
   License: Apache License, Version 2.0
 

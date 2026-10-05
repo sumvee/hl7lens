@@ -2,6 +2,7 @@
   {
     "id": "0001",
     "name": "Administrative Sex",
+    "open": true,
     "entries": {
       "F": "Female",
       "M": "Male",
@@ -14,6 +15,7 @@
   {
     "id": "0002",
     "name": "Marital Status",
+    "open": true,
     "entries": {
       "A": "Separated",
       "D": "Divorced",

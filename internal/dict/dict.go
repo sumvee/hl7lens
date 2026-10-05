@@ -59,9 +59,12 @@ type DataTypeDef struct {
 }
 
 // Table maps a coded value to its display meaning (HL7 table contents).
+// Open marks a user-defined (suggested) table whose published entries are
+// not exhaustive, so conformance must decode but not enforce membership.
 type Table struct {
 	ID      string            `json:"id"`
 	Name    string            `json:"name"`
+	Open    bool              `json:"open"`
 	Entries map[string]string `json:"entries"`
 }
 

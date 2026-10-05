@@ -107,9 +107,11 @@ func checkFieldValue(r *Report, d *dict.Dictionary, path string, fd dict.FieldDe
 	dt, hasDT := d.DataTypes[fd.DataType]
 	primitive := !hasDT || dt.Primitive
 
-	// Table membership for coded primitive fields, when the table is loaded.
+	// Table membership for coded primitive fields, when the table is loaded
+	// and closed. Open (user-defined) tables are decode-only: their entries
+	// are suggestions, not an exhaustive set, so membership is not enforced.
 	if primitive && fd.Table != "" {
-		if _, loaded := d.Tables[fd.Table]; loaded {
+		if tbl, loaded := d.Tables[fd.Table]; loaded && !tbl.Open {
 			val := field.Repetitions[0].Raw(delims)
 			if _, ok := d.Decode(fd.Table, val); !ok && val != "" {
 				r.warn(path, fmt.Sprintf("value %q not in table %s (%s)", val, fd.Table, fd.Name))

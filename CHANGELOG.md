@@ -5,6 +5,16 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+### Added
+- Code tables (CC0 HL7 Terminology): 0003 Event Type (decodes MSH-9
+  trigger and EVN-1), 0004 Patient Class, 0007 Admission Type, 0009
+  Ambulatory Status, 0063 Relationship, 0069 Hospital Service.
+- Code table 0078 Abnormal Flags / Interpretation Codes (decodes OBX-8),
+  derived from the Apache-2.0 HL7 v2-to-FHIR ConceptMap.
+- Tables carry an `open` flag: user-defined (suggested) tables are
+  decode-only, so validate no longer flags legitimate site codes as
+  "not in table". Existing 0001/0002 marked open accordingly.
+
 ### Fixed
 - `go install`-ed builds now report the module version (from build info)
   instead of "dev"; release builds keep their `-ldflags` version.
