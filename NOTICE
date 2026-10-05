@@ -1,0 +1,33 @@
+hl7lens
+Copyright 2026 Sumit Vig
+
+This product includes software developed by Sumit Vig.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+
+-------------------------------------------------------------------------------
+Embedded data provenance
+-------------------------------------------------------------------------------
+
+HL7 vocabulary / code tables (dict/.../tables)
+  Source:  HL7 Terminology (THO), https://terminology.hl7.org
+  License: Creative Commons Zero (CC0 1.0, public domain dedication)
+  HL7 v2 code systems and tables are made freely available under CC0.
+
+HL7 v2 segment / datatype / message structure (dict/.../segments, datatypes,
+messages)
+  Hand-curated for the launch message set from factual field metadata
+  (position, data type, optionality, repeatability, table binding),
+  cross-checked against the HL7 v2-to-FHIR project.
+
+HL7 v2-to-FHIR mapping content (used only to cross-check the above)
+  Source:  https://github.com/HL7/v2-to-fhir
+  License: Apache License, Version 2.0
+
+This product does NOT embed any GPL/MPL-licensed HAPI HL7 v2 code or data,
+nor any transcription of the copyrighted HL7 v2 specification text.
+
+HL7, Health Level Seven, and the HL7 standards are the property of
+Health Level Seven International. "HL7" is used here nominatively to describe
+the standard this tool operates on; this project is not affiliated with or
+endorsed by HL7 International.

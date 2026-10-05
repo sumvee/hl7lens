@@ -1,0 +1,8 @@
+# Build output
+/hl7lens
+/dist/
+
+# OS / IDE
+.DS_Store
+*.iml
+.idea/
