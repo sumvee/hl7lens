@@ -4,12 +4,28 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"runtime/debug"
 
 	"github.com/spf13/cobra"
 )
 
-// version is overwritten at build time via -ldflags.
+// version is overwritten at build time via -ldflags for release builds.
 var version = "dev"
+
+// resolveVersion returns the release version when it was set via -ldflags,
+// and otherwise falls back to the module version recorded in the build
+// info, which is populated for `go install <path>@vX.Y.Z` builds.
+func resolveVersion() string {
+	if version != "dev" {
+		return version
+	}
+	if info, ok := debug.ReadBuildInfo(); ok {
+		if v := info.Main.Version; v != "" && v != "(devel)" {
+			return v
+		}
+	}
+	return version
+}
 
 var rootCmd = &cobra.Command{
 	Use:   "hl7lens",
@@ -25,7 +41,7 @@ read, validate, and share.
   validate  check conformance (structure + message grammar)
 
 Reads a file argument or stdin; most verbs are pipeable.`,
-	Version:       version,
+	Version:       resolveVersion(),
 	SilenceUsage:  true,
 	SilenceErrors: true,
 }

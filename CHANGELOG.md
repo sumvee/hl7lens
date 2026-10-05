@@ -5,6 +5,10 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+### Fixed
+- `go install`-ed builds now report the module version (from build info)
+  instead of "dev"; release builds keep their `-ldflags` version.
+
 ## [0.1.0]
 
 ```
