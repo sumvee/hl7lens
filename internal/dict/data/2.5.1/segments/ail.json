@@ -1,0 +1,102 @@
+{
+  "name": "AIL",
+  "description": "Appointment Information - Location Resource",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Set ID - AIL",
+      "datatype": "SI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Segment Action Code",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0206"
+    },
+    {
+      "seq": 3,
+      "name": "Location Resource ID",
+      "datatype": "PL",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Location Type - AIL",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Location Group",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 6,
+      "name": "Start Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 7,
+      "name": "Start Date/Time Offset",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 8,
+      "name": "Start Date/Time Offset Units",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 9,
+      "name": "Duration",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 10,
+      "name": "Duration Units",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 11,
+      "name": "Allow Substitution Code",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0279"
+    },
+    {
+      "seq": 12,
+      "name": "Filler Status Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0278"
+    }
+  ]
+}

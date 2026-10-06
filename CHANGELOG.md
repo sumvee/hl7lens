@@ -5,6 +5,11 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+### Added
+- SIU resource segments RGS (Resource Group), AIS (Service), AIG (General
+  Resource), AIL (Location Resource), and AIP (Personnel Resource); the
+  SIU scheduling message is now fully decoded end to end.
+
 ## [0.1.1] - 2026-10-06
 
 ```

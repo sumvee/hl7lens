@@ -1,0 +1,102 @@
+{
+  "name": "AIS",
+  "description": "Appointment Information - Service",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Set ID - AIS",
+      "datatype": "SI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Segment Action Code",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0206"
+    },
+    {
+      "seq": 3,
+      "name": "Universal Service Identifier",
+      "datatype": "CE",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Start Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Start Date/Time Offset",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 6,
+      "name": "Start Date/Time Offset Units",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 7,
+      "name": "Duration",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 8,
+      "name": "Duration Units",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 9,
+      "name": "Allow Substitution Code",
+      "datatype": "IS",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0279"
+    },
+    {
+      "seq": 10,
+      "name": "Filler Status Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0278"
+    },
+    {
+      "seq": 11,
+      "name": "Placer Supplemental Service Information",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 12,
+      "name": "Filler Supplemental Service Information",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    }
+  ]
+}

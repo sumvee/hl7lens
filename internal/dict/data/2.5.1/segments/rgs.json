@@ -1,0 +1,30 @@
+{
+  "name": "RGS",
+  "description": "Resource Group",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Set ID - RGS",
+      "datatype": "SI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Segment Action Code",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0206"
+    },
+    {
+      "seq": 3,
+      "name": "Resource Group ID",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    }
+  ]
+}
