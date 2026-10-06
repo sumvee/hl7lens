@@ -1,0 +1,13 @@
+[
+  {"name": "CNE", "description": "Coded with No Exceptions", "components": [
+    {"seq": 1, "name": "Identifier",                      "datatype": "ST"},
+    {"seq": 2, "name": "Text",                            "datatype": "ST"},
+    {"seq": 3, "name": "Name of Coding System",           "datatype": "ID", "table": "0396"},
+    {"seq": 4, "name": "Alternate Identifier",            "datatype": "ST"},
+    {"seq": 5, "name": "Alternate Text",                  "datatype": "ST"},
+    {"seq": 6, "name": "Name of Alternate Coding System", "datatype": "ID", "table": "0396"},
+    {"seq": 7, "name": "Coding System Version ID",        "datatype": "ST"},
+    {"seq": 8, "name": "Alternate Coding System Version ID", "datatype": "ST"},
+    {"seq": 9, "name": "Original Text",                   "datatype": "ST"}
+  ]}
+]

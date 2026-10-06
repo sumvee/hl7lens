@@ -1,0 +1,254 @@
+{
+  "name": "ORC",
+  "description": "Common Order",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Order Control",
+      "datatype": "ID",
+      "optionality": "R",
+      "repeats": false,
+      "table": "0119"
+    },
+    {
+      "seq": 2,
+      "name": "Placer Order Number",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 3,
+      "name": "Filler Order Number",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Placer Group Number",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Order Status",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0038"
+    },
+    {
+      "seq": 6,
+      "name": "Response Flag",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0121"
+    },
+    {
+      "seq": 7,
+      "name": "Quantity/Timing",
+      "datatype": "TQ",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 8,
+      "name": "Parent",
+      "datatype": "EIP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 9,
+      "name": "Date/Time of Transaction",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 10,
+      "name": "Entered By",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 11,
+      "name": "Verified By",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 12,
+      "name": "Ordering Provider",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 13,
+      "name": "Enterer's Location",
+      "datatype": "PL",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 14,
+      "name": "Call Back Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 15,
+      "name": "Order Effective Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 16,
+      "name": "Order Control Code Reason",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 17,
+      "name": "Entering Organization",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 18,
+      "name": "Entering Device",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 19,
+      "name": "Action By",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 20,
+      "name": "Advanced Beneficiary Notice Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 21,
+      "name": "Ordering Facility Name",
+      "datatype": "XON",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 22,
+      "name": "Ordering Facility Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 23,
+      "name": "Ordering Facility Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 24,
+      "name": "Ordering Provider Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 25,
+      "name": "Order Status Modifier",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 26,
+      "name": "Advanced Beneficiary Notice Override Reason",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 27,
+      "name": "Filler's Expected Availability Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 28,
+      "name": "Confidentiality Code",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 29,
+      "name": "Order Type",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 30,
+      "name": "Enterer Authorization Mode",
+      "datatype": "CNE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 31,
+      "name": "Parent Universal Service Identifier",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    }
+  ]
+}

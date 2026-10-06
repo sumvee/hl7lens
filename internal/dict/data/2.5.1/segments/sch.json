@@ -1,0 +1,222 @@
+{
+  "name": "SCH",
+  "description": "Scheduling Activity Information",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Placer Appointment ID",
+      "datatype": "EI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Filler Appointment ID",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 3,
+      "name": "Occurrence Number",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Placer Group Number",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Schedule ID",
+      "datatype": "CE",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 6,
+      "name": "Event Reason",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 7,
+      "name": "Appointment Reason",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0276"
+    },
+    {
+      "seq": 8,
+      "name": "Appointment Type",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0277"
+    },
+    {
+      "seq": 9,
+      "name": "Appointment Duration",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 10,
+      "name": "Appointment Duration Units",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 11,
+      "name": "Appointment Timing Quantity",
+      "datatype": "TQ",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 12,
+      "name": "Placer Contact Person",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 13,
+      "name": "Placer Contact Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 14,
+      "name": "Placer Contact Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 15,
+      "name": "Placer Contact Location",
+      "datatype": "PL",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 16,
+      "name": "Filler Contact Person",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 17,
+      "name": "Filler Contact Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 18,
+      "name": "Filler Contact Address",
+      "datatype": "XAD",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 19,
+      "name": "Filler Contact Location",
+      "datatype": "PL",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 20,
+      "name": "Entered by Person",
+      "datatype": "XCN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 21,
+      "name": "Entered by Phone Number",
+      "datatype": "XTN",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 22,
+      "name": "Entered by Location",
+      "datatype": "PL",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 23,
+      "name": "Parent Placer Appointment ID",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 24,
+      "name": "Parent Filler Appointment ID",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 25,
+      "name": "Filler Status Code",
+      "datatype": "CE",
+      "optionality": "O",
+      "repeats": false,
+      "table": "0278"
+    },
+    {
+      "seq": 26,
+      "name": "Placer Order Number",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 27,
+      "name": "Filler Order Number",
+      "datatype": "EI",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import (
 // TestLaunchSegmentsPresent confirms the ADT + ORU launch segment set.
 func TestLaunchSegmentsPresent(t *testing.T) {
 	d := load(t)
-	for _, name := range []string{"MSH", "EVN", "PID", "PV1", "NK1", "OBR", "OBX", "NTE", "AL1", "DG1", "GT1", "IN1"} {
+	for _, name := range []string{"MSH", "EVN", "PID", "PV1", "NK1", "OBR", "OBX", "NTE", "AL1", "DG1", "GT1", "IN1", "ORC", "SPM", "SCH"} {
 		if _, ok := d.Segments[name]; !ok {
 			t.Errorf("segment %s missing", name)
 		}
@@ -18,7 +18,7 @@ func TestLaunchSegmentsPresent(t *testing.T) {
 // TestMessagesPresent confirms both launch message grammars loaded.
 func TestMessagesPresent(t *testing.T) {
 	d := load(t)
-	for _, s := range []string{"ADT_A01", "ORU_R01"} {
+	for _, s := range []string{"ADT_A01", "ORU_R01", "SIU_S12"} {
 		if _, ok := d.Messages[s]; !ok {
 			t.Errorf("message structure %s missing", s)
 		}

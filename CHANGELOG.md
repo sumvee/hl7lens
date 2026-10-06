@@ -17,6 +17,11 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 - Segments GT1 (Guarantor) and IN1 (Insurance), plus the AUI (Authorization
   Information) data type; both added to the ADT grammar as optional,
   repeating.
+- Segments ORC (Common Order) and SPM (Specimen), plus the CNE (Coded with
+  No Exceptions) data type. ORC added to the ORU grammar; SPM is defined
+  for future specimen-oriented messages (not part of v2.5.1 ORU_R01).
+- Message type SIU (scheduling): SCH (Scheduling Activity Information)
+  segment and the SIU_S12 grammar covering triggers S12-S26.
 - Tables carry an `open` flag: user-defined (suggested) tables are
   decode-only, so validate no longer flags legitimate site codes as
   "not in table". Existing 0001/0002 marked open accordingly.

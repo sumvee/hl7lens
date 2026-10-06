@@ -7,6 +7,7 @@
     {"segment": "PD1", "optionality": "O", "repeats": false},
     {"segment": "NK1", "optionality": "O", "repeats": true},
     {"segment": "PV1", "optionality": "O", "repeats": false},
+    {"segment": "ORC", "optionality": "O", "repeats": true},
     {"segment": "OBR", "optionality": "R", "repeats": true},
     {"segment": "NTE", "optionality": "O", "repeats": true},
     {"segment": "OBX", "optionality": "O", "repeats": true}

@@ -1,0 +1,16 @@
+{
+  "structure": "SIU_S12",
+  "triggers": ["S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20", "S21", "S22", "S23", "S24", "S26"],
+  "segments": [
+    {"segment": "MSH", "optionality": "R", "repeats": false},
+    {"segment": "SCH", "optionality": "R", "repeats": false},
+    {"segment": "NTE", "optionality": "O", "repeats": true},
+    {"segment": "PID", "optionality": "O", "repeats": false},
+    {"segment": "PV1", "optionality": "O", "repeats": false},
+    {"segment": "RGS", "optionality": "O", "repeats": true},
+    {"segment": "AIS", "optionality": "O", "repeats": true},
+    {"segment": "AIG", "optionality": "O", "repeats": true},
+    {"segment": "AIL", "optionality": "O", "repeats": true},
+    {"segment": "AIP", "optionality": "O", "repeats": true}
+  ]
+}

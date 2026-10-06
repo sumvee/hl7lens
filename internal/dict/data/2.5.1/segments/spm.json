@@ -1,0 +1,238 @@
+{
+  "name": "SPM",
+  "description": "Specimen",
+  "fields": [
+    {
+      "seq": 1,
+      "name": "Set ID - SPM",
+      "datatype": "SI",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 2,
+      "name": "Specimen ID",
+      "datatype": "EIP",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 3,
+      "name": "Specimen Parent IDs",
+      "datatype": "EIP",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 4,
+      "name": "Specimen Type",
+      "datatype": "CWE",
+      "optionality": "R",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 5,
+      "name": "Specimen Type Modifier",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 6,
+      "name": "Specimen Additives",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 7,
+      "name": "Specimen Collection Method",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 8,
+      "name": "Specimen Source Site",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 9,
+      "name": "Specimen Source Site Modifier",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 10,
+      "name": "Specimen Collection Site",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 11,
+      "name": "Specimen Role",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 12,
+      "name": "Specimen Collection Amount",
+      "datatype": "CQ",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 13,
+      "name": "Grouped Specimen Count",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 14,
+      "name": "Specimen Description",
+      "datatype": "ST",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 15,
+      "name": "Specimen Handling Code",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 16,
+      "name": "Specimen Risk Code",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 17,
+      "name": "Specimen Collection Date/Time",
+      "datatype": "DR",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 18,
+      "name": "Specimen Received Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 19,
+      "name": "Specimen Expiration Date/Time",
+      "datatype": "TS",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 20,
+      "name": "Specimen Availability",
+      "datatype": "ID",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 21,
+      "name": "Specimen Reject Reason",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 22,
+      "name": "Specimen Quality",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 23,
+      "name": "Specimen Appropriateness",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 24,
+      "name": "Specimen Condition",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": true,
+      "table": ""
+    },
+    {
+      "seq": 25,
+      "name": "Specimen Current Quantity",
+      "datatype": "CQ",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 26,
+      "name": "Number of Specimen Containers",
+      "datatype": "NM",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 27,
+      "name": "Container Type",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 28,
+      "name": "Container Condition",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    },
+    {
+      "seq": 29,
+      "name": "Specimen Child Role",
+      "datatype": "CWE",
+      "optionality": "O",
+      "repeats": false,
+      "table": ""
+    }
+  ]
+}
