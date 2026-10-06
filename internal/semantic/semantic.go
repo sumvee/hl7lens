@@ -13,37 +13,37 @@ import (
 
 // ComponentView is one annotated component of a composite field value.
 type ComponentView struct {
-	Path     string // e.g. ".1"
-	Name     string // dictionary name, empty if unknown
-	Raw      string
-	Decoded  string // table meaning, empty if none
-	Table    string // table id used for the decode, empty if none
-	DataType string
+	Path     string `json:"path"`               // e.g. ".1"
+	Name     string `json:"name,omitempty"`     // dictionary name, empty if unknown
+	DataType string `json:"datatype,omitempty"` //
+	Raw      string `json:"raw"`                //
+	Decoded  string `json:"decoded,omitempty"`  // table meaning, empty if none
+	Table    string `json:"table,omitempty"`    // table id used for the decode
 }
 
 // FieldView is one annotated field value (one repetition of a field).
 type FieldView struct {
-	Path       string // e.g. "PID-5" or "PID-3[2]"
-	Name       string
-	DataType   string
-	Raw        string
-	Decoded    string // table meaning for a coded primitive field
-	Table      string // table id used for the decode, empty if none
-	Components []ComponentView
+	Path       string          `json:"path"`                 // e.g. "PID-5" or "PID-3[2]"
+	Name       string          `json:"name,omitempty"`       //
+	DataType   string          `json:"datatype,omitempty"`   //
+	Raw        string          `json:"raw"`                  //
+	Decoded    string          `json:"decoded,omitempty"`    // table meaning for a coded primitive field
+	Table      string          `json:"table,omitempty"`      // table id used for the decode
+	Components []ComponentView `json:"components,omitempty"` //
 }
 
 // SegmentView is an annotated segment.
 type SegmentView struct {
-	Name        string
-	Description string
-	Known       bool // whether the dictionary defines this segment
-	Fields      []FieldView
+	Name        string      `json:"name"`
+	Description string      `json:"description,omitempty"`
+	Known       bool        `json:"known"`
+	Fields      []FieldView `json:"fields,omitempty"`
 }
 
 // MessageView is the full annotation tree for a message.
 type MessageView struct {
-	Version  dict.Version
-	Segments []SegmentView
+	Version  dict.Version  `json:"version"`
+	Segments []SegmentView `json:"segments"`
 }
 
 // Build annotates a parsed message against a dictionary.

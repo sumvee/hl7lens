@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"github.com/spf13/cobra"
@@ -23,9 +24,19 @@ var explainCmd = &cobra.Command{
 			return err
 		}
 		view := semantic.Build(msg, d)
+
+		if asJSON, _ := cmd.Flags().GetBool("json"); asJSON {
+			enc := json.NewEncoder(cmd.OutOrStdout())
+			enc.SetIndent("", "  ")
+			enc.SetEscapeHTML(false)
+			return enc.Encode(view)
+		}
 		fmt.Fprint(cmd.OutOrStdout(), view.Text())
 		return nil
 	},
 }
 
-func init() { rootCmd.AddCommand(explainCmd) }
+func init() {
+	explainCmd.Flags().Bool("json", false, "emit the annotation tree as JSON")
+	rootCmd.AddCommand(explainCmd)
+}
