@@ -5,6 +5,12 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-10-06
+
+```
+  SIU fully fleshed out (resource segments) + machine-readable --json
+```
+
 ### Added
 - SIU resource segments RGS (Resource Group), AIS (Service), AIG (General
   Resource), AIL (Location Resource), and AIP (Personnel Resource); the
@@ -82,6 +88,7 @@ FIRST PUBLIC RELEASE
   into components).
 - Table 0125 (Value Type) is not yet embedded, so OBX-2 is not decoded.
 
-[Unreleased]: https://github.com/sumvee/hl7lens/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/sumvee/hl7lens/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/sumvee/hl7lens/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/sumvee/hl7lens/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/sumvee/hl7lens/releases/tag/v0.1.0
