@@ -6,6 +6,11 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 ## [Unreleased]
 
 ### Added
+- MLLP test harness: `send <host:port> [file]` frames a message over TCP
+  and prints the ACK (non-zero exit on AE/AR), and `listen [addr]` accepts
+  MLLP connections, prints each message, and returns an ACK (with
+  `--validate`, failing messages are answered AE). Includes MLLP framing,
+  a stream reader, and ACK generation. Dependency-free (net stdlib).
 - Message type MDM (medical document management): TXA (Transcription
   Document Header) segment and the MDM_T02 grammar covering triggers
   T01-T11, plus the PPN data type (opaque). Trigger events already decoded
