@@ -5,6 +5,12 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-06
+
+```
+  new MLLP test harness (send/listen) + MDM message type
+```
+
 ### Added
 - MLLP test harness: `send <host:port> [file]` frames a message over TCP
   and prints the ACK (non-zero exit on AE/AR), and `listen [addr]` accepts
@@ -99,7 +105,8 @@ FIRST PUBLIC RELEASE
   into components).
 - Table 0125 (Value Type) is not yet embedded, so OBX-2 is not decoded.
 
-[Unreleased]: https://github.com/sumvee/hl7lens/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/sumvee/hl7lens/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/sumvee/hl7lens/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/sumvee/hl7lens/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/sumvee/hl7lens/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/sumvee/hl7lens/releases/tag/v0.1.0
