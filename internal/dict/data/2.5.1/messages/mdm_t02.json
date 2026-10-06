@@ -1,0 +1,13 @@
+{
+  "structure": "MDM_T02",
+  "triggers": ["T01", "T02", "T03", "T04", "T05", "T06", "T07", "T08", "T09", "T10", "T11"],
+  "segments": [
+    {"segment": "MSH", "optionality": "R", "repeats": false},
+    {"segment": "EVN", "optionality": "R", "repeats": false},
+    {"segment": "PID", "optionality": "R", "repeats": false},
+    {"segment": "PV1", "optionality": "O", "repeats": false},
+    {"segment": "TXA", "optionality": "R", "repeats": false},
+    {"segment": "OBX", "optionality": "O", "repeats": true},
+    {"segment": "NTE", "optionality": "O", "repeats": true}
+  ]
+}

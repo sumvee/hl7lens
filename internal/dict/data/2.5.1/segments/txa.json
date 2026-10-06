@@ -1,0 +1,29 @@
+{
+  "name": "TXA",
+  "description": "Transcription Document Header",
+  "fields": [
+    {"seq": 1,  "name": "Set ID - TXA",                       "datatype": "SI",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 2,  "name": "Document Type",                      "datatype": "IS",  "optionality": "R", "repeats": false, "table": "0270"},
+    {"seq": 3,  "name": "Document Content Presentation",      "datatype": "ID",  "optionality": "C", "repeats": false, "table": "0191"},
+    {"seq": 4,  "name": "Activity Date/Time",                 "datatype": "TS",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 5,  "name": "Primary Activity Provider Code/Name","datatype": "XCN", "optionality": "C", "repeats": true,  "table": ""},
+    {"seq": 6,  "name": "Origination Date/Time",              "datatype": "TS",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 7,  "name": "Transcription Date/Time",            "datatype": "TS",  "optionality": "C", "repeats": false, "table": ""},
+    {"seq": 8,  "name": "Edit Date/Time",                     "datatype": "TS",  "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 9,  "name": "Originator Code/Name",               "datatype": "XCN", "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 10, "name": "Assigned Document Authenticator",    "datatype": "XCN", "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 11, "name": "Transcriptionist Code/Name",         "datatype": "XCN", "optionality": "C", "repeats": true,  "table": ""},
+    {"seq": 12, "name": "Unique Document Number",             "datatype": "EI",  "optionality": "R", "repeats": false, "table": ""},
+    {"seq": 13, "name": "Parent Document Number",             "datatype": "EI",  "optionality": "C", "repeats": false, "table": ""},
+    {"seq": 14, "name": "Placer Order Number",                "datatype": "EI",  "optionality": "O", "repeats": true,  "table": ""},
+    {"seq": 15, "name": "Filler Order Number",                "datatype": "EI",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 16, "name": "Unique Document File Name",          "datatype": "ST",  "optionality": "O", "repeats": false, "table": ""},
+    {"seq": 17, "name": "Document Completion Status",         "datatype": "ID",  "optionality": "R", "repeats": false, "table": "0271"},
+    {"seq": 18, "name": "Document Confidentiality Status",    "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0272"},
+    {"seq": 19, "name": "Document Availability Status",       "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0273"},
+    {"seq": 20, "name": "Document Storage Status",            "datatype": "ID",  "optionality": "O", "repeats": false, "table": "0275"},
+    {"seq": 21, "name": "Document Change Reason",             "datatype": "ST",  "optionality": "C", "repeats": false, "table": ""},
+    {"seq": 22, "name": "Authentication Person, Time Stamp",  "datatype": "PPN", "optionality": "C", "repeats": true,  "table": ""},
+    {"seq": 23, "name": "Distributed Copies",                 "datatype": "XCN", "optionality": "O", "repeats": true,  "table": ""}
+  ]
+}

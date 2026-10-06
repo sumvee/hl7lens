@@ -5,6 +5,12 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+### Added
+- Message type MDM (medical document management): TXA (Transcription
+  Document Header) segment and the MDM_T02 grammar covering triggers
+  T01-T11, plus the PPN data type (opaque). Trigger events already decoded
+  via table 0003.
+
 ## [0.1.2] - 2026-10-06
 
 ```
