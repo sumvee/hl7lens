@@ -5,6 +5,13 @@ Format follows Keep a Changelog; versions follow Semantic Versioning.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-06
+
+```
+  dictionary grows: 15 segments · 46 data types · 11 code tables ·
+  3 message types (ADT, ORU, SIU)
+```
+
 ### Added
 - Code tables (CC0 HL7 Terminology): 0003 Event Type (decodes MSH-9
   trigger and EVN-1), 0004 Patient Class, 0007 Admission Type, 0009
@@ -67,5 +74,6 @@ FIRST PUBLIC RELEASE
   into components).
 - Table 0125 (Value Type) is not yet embedded, so OBX-2 is not decoded.
 
-[Unreleased]: https://github.com/sumvee/hl7lens/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/sumvee/hl7lens/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/sumvee/hl7lens/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/sumvee/hl7lens/releases/tag/v0.1.0
